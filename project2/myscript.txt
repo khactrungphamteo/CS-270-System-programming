@@ -1,0 +1,47 @@
+Script started on 2021-03-24 23:04:01-04:00 [TERM="xterm-256color" TTY="/dev/pts/19" COLUMNS="149" LINES="20"]
+]0;tpng223@tpng223: ~/Desktop/Project2[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project2[00m$ ./[K[K.[K/.f[K[K[K./forker
+Process A, PID 1048687 greets you.
+Process B, PID 1048688 greets you.
+Process C, PID 1048690 greets you.
+Process C exits normally
+Process B here: Process C exited with status 0x0 
+Process B exits normally
+Process A here: Process D exited with status 0x0 
+Process D, PID 1048689 greets you.
+Process D exits normally
+Process A here: Process D exited with status 0x0 
+Process A exits normally
+]0;tpng223@tpng223: ~/Desktop/Project2[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project2[00m$ ./forker
+Process A, PID 1048694 greets you.
+Process B, PID 1048695 greets you.
+Process C, PID 1048697 greets you.
+Process C exits normally
+Process B here: Process C exited with status 0x0 
+Process B exits normally
+Process A here: Process D exited with status 0x0 
+Process D, PID 1048696 greets you.
+Process D exits normally
+Process A here: Process D exited with status 0x0 
+Process A exits normally
+]0;tpng223@tpng223: ~/Desktop/Project2[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project2[00m$ ./s[K[K[K./signs[K[Ks
+Input number: c
+Child: finished sending SIGINT LIMIT times.
+.....................
+20
+ 1
+]0;tpng223@tpng223: ~/Desktop/Project2[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project2[00m$ ./[K[K./ipc
+Process A, PID 1049062 greets you.
+Process B, PID 1049063 greets you.
+Process C, PID 1049065 greets you.
+Process D, PID 1049064 greets you.
+Process C exits normally
+Process D exits normally
+Process A here: Process D exited with status 0x0 
+Process B here: Process C exited with status 0x0 
+Process B exits normally
+Process A here: Process B exited with status 0x0 
+Process A exits normally
+]0;tpng223@tpng223: ~/Desktop/Project2[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project2[00m$ ./ip[K[K[K[Kexit
+exit
+
+Script done on 2021-03-24 23:08:07-04:00 [COMMAND_EXIT_CODE="0"]
