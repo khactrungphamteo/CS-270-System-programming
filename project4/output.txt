@@ -1,0 +1,190 @@
+Script started on 2021-04-15 15:38:36-04:00 [TERM="xterm-256color" TTY="/dev/pts/27" COLUMNS="149" LINES="11"]
+]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ make UDPClient
+make: 'UDPClient' is up to date.
+]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ make UDPClientscript output.txtls[Kcd Project3ls[Kcd Desktop/ls[Kecho output for part 2: successful transaction between client and student's server
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[50P./UDPClient 172.31.146.118 31416
+message sent to the server
+magic=270 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+message received!
+message received from the server
+magic=270 
+length= 62
+xid=4a 77 cb b3
+version=2
+flags=0x0 
+port=0 
+result=15 
+variable part=JJv5ERb
+]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ e[Kech[K[K[Kecho oout[K[K[Kutp[Kout for part2 succesf[Ksful transactoin b[K[K[K[K[Kio [Kn n[Kbetween client ans t[K[K[Kd t[Kstudent server
+outout for part2 successful transaction between client and student server
+]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ 
+[K]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ 
+[K]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ 
+[K]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ echo outout for part2 successful transaction between client and student server[A./UDPClient 172.31.146.118 31416[K
+message sent to the server
+magic=270 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+message received!
+message received from the server
+magic=270 
+length= 71
+xid=4a 77 cb b3
+version=2
+flags=0x0 
+port=0 
+result=15 
+variable part=q0x3OGd
+]0;tpng223@tpng223: ~/Desktop/Project3[01;32mtpng223@tpng223[00m:[01;34m~/Desktop/Project3[00m$ exit
+exit
+this part show two different sets of output. For each different request, there will be different cookies. 
+1st output:
+output of student server:
+message received from the client
+magic=270 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+new connection from 172.31.146.21 45942
+message sent to the client
+magic=270 
+length= 30
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=45942172.31.146.21
+
+output of the client
+message sent to the server
+magic=270 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+message sent! 
+message sent! 
+message sent! 
+message received!
+message received from the server
+magic=270 
+length= 30
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=4594217
+
+2nd output:
+output of the server:
+message received from the client
+magic=270 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+new connection from 172.31.146.21 42745
+message sent to the client
+magic=270 
+length= 30
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=42745172.31.146.21
+
+output of the client:
+message sent to the server
+magic=270 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+message sent! 
+message sent! 
+message received!
+message received from the server
+magic=270 
+length= 30
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=4274517
+
+Output showing that if error occurs, E bit will be set to 1
+output of the server:
+message received from the client
+magic=260 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+message sent to the client
+magic=260 
+length= 17
+xid=4a 77 cb b3
+version=2
+flags=0x1 
+port=0 
+result=0 
+variable part=error
+
+output of the client:
+message sent to the server
+magic=260 
+length= 19
+xid=4a 77 cb b3
+version=2
+flags=0x2 
+port=0 
+result=0 
+variable part=tpng223
+message sent! 
+message sent! 
+message received!
+message received from the server
+magic=260 
+length= 17
+xid=4a 77 cb b3
+version=2
+flags=0x1 
+port=0 
+result=0 
+variable part=error
+
+
+
+Script done on 2021-04-15 15:39:52-04:00 [COMMAND_EXIT_CODE="0"]
