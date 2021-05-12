@@ -1,1 +1,36 @@
+Members:
+                Trung Nguyen:  responsible for parsing, cd, lv, substitute variables, !cmd param
+                                & I/O redirection, built-in PATH, CWD, PS, and error check tricky
+                                cases.
 
+                Tran Le:       responsible for #, quit, parsing, set and unset variable & value,
+                                I/O redirection and handle signal.
+                  
+        
+
+Description:    This simple shell parses input from command line into token(s) using strsep()
+                and stores all tokens in an array. If tokens matches commands created
+                for simple shell, simple shell will run the command as requested, if not
+                shell displays error message. Supported commands in simple shell are: (1)'#' (comment),
+                (2) 'cd'(change a directory using getCWD()), (3)'variable = value'(assigning value
+                to a variable and stored them in a struct), (4)'lv' (list all variables and
+                values stored to terminal by accessing data in struct created earlier; including
+                built-in variables like (a)'CWD'(display current directory using getCWD()), (b)'PATH'
+                (display path to directly execute a file using pathname, user can change PATH when assign
+                PATH to a new pathname) and (c)'PS'(display value of variable if '$' is followed by an
+                existing variable)), (5)'! cmd param [infrom:][outto:]'(execute a program with unlimited
+                parameters and redirect files using dup2(); absolute pathname, filename in PATH and
+                filename in current directory are accepted by shell), (6)'unset variable'(unset any
+                existing variable and its value by using delete array algorithm to delete variables
+                and values in struct). Ctrl-C doesn't terminate shell, only Ctrl-D terminates it.
+
+
+Limitation:     (1) Words in double quote appears at the very end of parsing because they are multiple
+                concatenated tokens stored in a different array than other single tokens.
+                (2) '! cmd' cannot check if user enters the correct/existing absolute pathname, file in
+                PATH or file in current directory. 
+
+How to compile: type "make all" in the terminal, and the shell will display awaiting for commands. 
+                an echo file is included for the purpose of variable substitution
+                when typing ! echo $variable, the shell will execute the command and print out the value of variable
+                in the terminal
